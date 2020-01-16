@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+#. ~/.setuptools/
 
 for OPT in "$@"
 do
