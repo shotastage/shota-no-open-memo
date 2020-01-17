@@ -17,5 +17,14 @@ do
             git push -u origin master
             exit 0
             ;;
+        ls | list )
+            listmemo
+            exit 0
+            ;;
     esac
 done
+
+
+function listmemo {
+    ls
+}
