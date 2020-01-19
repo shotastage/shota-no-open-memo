@@ -10,6 +10,11 @@ SHOTAの公開メモ帳です
 
 - [📝   CATP Idea](./MEMO-20200116_220955.md)
 
+- [📂  emoSys](./M_MemoSys)
+  - [📝   計画機能](./M_MemoSys/MEMO-20200119_165145.md)
+
+  - [📝   既知の問題](./M_MemoSys/MEMO-20200119_165745.md)
+
 - [📂  NXPortal](./M_NXPortal)
   - [📝   Next RG Portal開発メモ](./M_NXPortal/MEMO-20200116_221637.md)
 
@@ -17,11 +22,6 @@ SHOTAの公開メモ帳です
 
 - [📂  TODO](./M_TODO)
   - [📝   OEPN Todo](./M_TODO/MEMO-20200119_164906.md)
-
-- [📂  Openemo](./M_OpenMemo)
-  - [📝   計画機能](./M_OpenMemo/MEMO-20200119_165145.md)
-
-  - [📝   既知の問題](./M_OpenMemo/MEMO-20200119_165745.md)
 
 - [📂  Thesis](./M_Thesis)
   - [📝   卒論メモ](./M_Thesis/MEMO-20200117_141511.md)
