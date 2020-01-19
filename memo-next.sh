@@ -31,15 +31,15 @@ do
             exit 0
             ;;
         up | commit )
-            ./~setuptools/storage/memo.sh up
+            ./~setuptools/storage/somemo/memo.sh up
             exit 0
             ;;
         ls | list )
-            ./~setuptools/storage/memo.sh list
+            ./~setuptools/storage/somemo/memo.sh list
             exit 0
             ;;
         --generate-index )
-            ./~setuptools/storage/memo.sh genindex
+            ./~setuptools/storage/somemo/memo.sh genindex
             exit 0
             ;;
     esac
