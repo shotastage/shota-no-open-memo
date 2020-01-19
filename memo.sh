@@ -2,6 +2,15 @@
 
 #. ~/.setuptools/
 
+listmemo() {
+    for f in `find . -type f -name "*.md"` ; do 
+        if [ ! ${f} = "./README.md" ]; then
+            sed -n 1P $f
+        fi
+    done
+}
+
+
 for OPT in "$@"
 do
     case $OPT in
@@ -23,8 +32,3 @@ do
             ;;
     esac
 done
-
-
-function listmemo {
-    ls
-}
