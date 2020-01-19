@@ -88,6 +88,11 @@ do
             mcode $2
             exit 0
             ;;
+        sync )
+            git pull origin master
+            git push -u origin master
+            exit 0
+            ;;
         --generate-index )
             genindex
             exit 0
