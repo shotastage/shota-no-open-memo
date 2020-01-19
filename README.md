@@ -15,6 +15,9 @@ SHOTAの公開メモ帳です
 
   - [📝   NECO Portal のインテグレーション](./M_NXPortal/MEMO-20200119_161709.md)
 
+- [📂  TODO](./M_TODO)
+  - [📝   OEPN Todo](./M_TODO/MEMO-20200119_164906.md)
+
 - [📂  Thesis](./M_Thesis)
   - [📝   卒論メモ](./M_Thesis/MEMO-20200117_141511.md)
 
