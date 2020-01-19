@@ -10,6 +10,8 @@ SHOTAの公開メモ帳です
 
 - [📝   CATP Idea](./MEMO-20200116_220955.md)
 
+- [📝   memo.sh Next対応](./MEMO-20200119_194223.md)
+
 - [📂  NoteScript](./M_NoteScript)
   - [📝   計画機能](./M_NoteScript/MEMO-20200119_165145.md)
 
