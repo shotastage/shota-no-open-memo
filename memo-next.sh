@@ -38,11 +38,17 @@ do
             exit 0
             ;;
         ls | list )
-            ./~/.setuptools/storage/somemo/memo.sh list
+            CRT=$(pwd)
+            cd ~/.setuptools/storage/somemo/
+            ./memo.sh ls
+            cd $CRT
             exit 0
             ;;
         --generate-index )
-            ./~/.setuptools/storage/somemo/memo.sh genindex
+            CRT=$(pwd)
+            cd ~/.setuptools/storage/somemo/
+            ./memo.sh genindex
+            cd $CRT
             exit 0
             ;;
     esac
