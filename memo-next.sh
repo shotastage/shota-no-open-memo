@@ -31,7 +31,10 @@ do
             exit 0
             ;;
         up | commit )
-            ./~/.setuptools/storage/somemo/memo.sh up
+            CRT=$(pwd)
+            cd ~/.setuptools/storage/somemo/
+            ./memo.sh up
+            cd $CRT
             exit 0
             ;;
         ls | list )
