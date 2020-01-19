@@ -10,10 +10,10 @@ SHOTAの公開メモ帳です
 
 - [📝   CATP Idea](./MEMO-20200116_220955.md)
 
-- [📂  emoSys](./M_MemoSys)
-  - [📝   計画機能](./M_MemoSys/MEMO-20200119_165145.md)
+- [📂  NoteScript](./M_NoteScript)
+  - [📝   計画機能](./M_NoteScript/MEMO-20200119_165145.md)
 
-  - [📝   既知の問題](./M_MemoSys/MEMO-20200119_165745.md)
+  - [📝   既知の問題](./M_NoteScript/MEMO-20200119_165745.md)
 
 - [📂  NXPortal](./M_NXPortal)
   - [📝   Next RG Portal開発メモ](./M_NXPortal/MEMO-20200116_221637.md)
