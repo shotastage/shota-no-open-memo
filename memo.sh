@@ -4,10 +4,20 @@ YOUR_NAME="SHOTA"
 
 
 listmemo() {
-    for f in `find . -type f -name "*.md"` ; do 
+    for f in `find . -maxdepth 1 -type f -name "*.md"` ; do 
         if [ ! ${f} = "./README.md" ]; then
-            sed -n 1P $f
+            echo "・ 📝  `sed -n 1P $f | tr -d \#`"
+            echo ""
         fi
+    done
+
+    for d in `find . -maxdepth 1 -type d -name "M_*"` ; do 
+        echo "・ 📂  `basename $d | tr -d "M_"`"
+        echo ""
+        for f in `find $d -maxdepth 1 -type f -name "*.md"` ; do 
+            echo "    ・ 📝  `sed -n 1P $f | tr -d \#`"
+            echo ""
+        done
     done
 }
 
