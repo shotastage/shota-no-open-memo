@@ -3,6 +3,11 @@
 YOUR_NAME="SHOTA"
 
 
+mcode() {
+    echo "Opening MCODE: ${1}..."
+    # open -a Typora.app 
+}
+
 listmemo() {
     for f in `find . -maxdepth 1 -type f -name "*.md"` ; do 
         if [ ! ${f} = "./README.md" ]; then
@@ -77,6 +82,10 @@ do
             ;;
         ls | list )
             listmemo
+            exit 0
+            ;;
+        o | open )
+            mcode $2
             exit 0
             ;;
         --generate-index )
