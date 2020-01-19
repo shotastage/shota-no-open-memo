@@ -44,6 +44,13 @@ do
             cd $CRT
             exit 0
             ;;
+        sync )
+            CRT=$(pwd)
+            cd ~/.setuptools/storage/somemo/
+            ./memo.sh sync
+            cd $CRT
+            exit 0
+            ;;
         --generate-index )
             CRT=$(pwd)
             cd ~/.setuptools/storage/somemo/
