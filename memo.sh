@@ -47,6 +47,11 @@ genindex() {
 }
 
 
+preprosessor() {
+    # COMMANDS=`'${0}' | tr ',' '\n'`
+    echo ""
+}
+
 for OPT in "$@"
 do
     case $OPT in
