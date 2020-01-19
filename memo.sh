@@ -35,6 +35,7 @@ do
         new )
             FNAME=MEMO-`date "+%Y%m%d_%H%M%S"`.md
             touch $FNAME
+            echo "# Title" >> $FNAME
             open -a Typora $FNAME
             exit 0
             ;;
