@@ -22,9 +22,17 @@ genindex() {
 
     for f in `find . -type f -name "*.md"` ; do 
         if [ ! ${f} = "./README.md" ]; then
-            echo "- [`sed -n 1P $f | tr -d \#`](${f})" >> README.md
+            echo "- [📝  `sed -n 1P $f | tr -d \#`](${f})" >> README.md
             echo "" >> README.md
         fi
+    done
+
+    for d in `find . -maxdepth 1 -type d -name "M_*"` ; do 
+        echo "- [📂  `basename $d | tr -d "M_"`](${d})" >> README.md
+        for f in `find $d -type f -name "*.md"` ; do 
+            echo "  - [📝  `sed -n 1P $f | tr -d \#`](${f})" >> README.md
+            echo "" >> README.md
+        done
     done
 }
 
@@ -37,6 +45,12 @@ do
             touch $FNAME
             echo "# Title" >> $FNAME
             open -a Typora $FNAME
+            exit 0
+            ;;
+        mkf )
+            read -p "Folder Name: " fname
+            mkdir "M_${fname}"
+            touch ./M_${fname}/.gitkeep
             exit 0
             ;;
         commit )
