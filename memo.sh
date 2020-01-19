@@ -20,7 +20,7 @@ genindex() {
     echo "# INDEX" >> README.md
     echo "" >> README.md
 
-    for f in `find . -type f -name "*.md"` ; do 
+    for f in `find . -maxdepth 1 -type f -name "*.md"` ; do 
         if [ ! ${f} = "./README.md" ]; then
             echo "- [📝  `sed -n 1P $f | tr -d \#`](${f})" >> README.md
             echo "" >> README.md
@@ -29,7 +29,7 @@ genindex() {
 
     for d in `find . -maxdepth 1 -type d -name "M_*"` ; do 
         echo "- [📂  `basename $d | tr -d "M_"`](${d})" >> README.md
-        for f in `find $d -type f -name "*.md"` ; do 
+        for f in `find $d -maxdepth 1 -type f -name "*.md"` ; do 
             echo "  - [📝  `sed -n 1P $f | tr -d \#`](${f})" >> README.md
             echo "" >> README.md
         done
