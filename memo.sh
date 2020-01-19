@@ -63,7 +63,7 @@ do
             touch ./M_${fname}/.gitkeep
             exit 0
             ;;
-        commit )
+        up | commit )
             genindex
             git add .
             git commit -m "Update on `date "+%Y%m%d_%H%M%S"`"
@@ -74,7 +74,7 @@ do
             listmemo
             exit 0
             ;;
-        genindex )
+        --generate-index )
             genindex
             exit 0
             ;;

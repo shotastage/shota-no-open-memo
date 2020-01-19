@@ -18,6 +18,9 @@ SHOTAの公開メモ帳です
 - [📂  TODO](./M_TODO)
   - [📝   OEPN Todo](./M_TODO/MEMO-20200119_164906.md)
 
+- [📂  Openemo](./M_OpenMemo)
+  - [📝   計画機能](./M_OpenMemo/MEMO-20200119_165145.md)
+
 - [📂  Thesis](./M_Thesis)
   - [📝   卒論メモ](./M_Thesis/MEMO-20200117_141511.md)
 
