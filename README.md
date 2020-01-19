@@ -1,4 +1,6 @@
-# shotaのOpenメモ
+# SHOTAのOpenメモ
+
+SHOTAの公開メモ帳です
 
 # INDEX
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-#. ~/.setuptools/
+YOUR_NAME="SHOTA"
+
 
 listmemo() {
     for f in `find . -type f -name "*.md"` ; do 
@@ -12,7 +13,9 @@ listmemo() {
 
 genindex() {
     rm -f README.md
-    echo "# shotaのOpenメモ" >> README.md
+    echo "# ${YOUR_NAME}のOpenメモ" >> README.md
+    echo "" >> README.md
+    echo "${YOUR_NAME}の公開メモ帳です" >> README.md
     echo "" >> README.md
     echo "# INDEX" >> README.md
     echo "" >> README.md
