@@ -10,6 +10,21 @@ listmemo() {
     done
 }
 
+genindex() {
+    rm -f README.md
+    echo "# shotaのOpenメモ" >> README.md
+    echo "" >> README.md
+    echo "# INDEX" >> README.md
+    echo "" >> README.md
+
+    for f in `find . -type f -name "*.md"` ; do 
+        if [ ! ${f} = "./README.md" ]; then
+            echo "- [`sed -n 1P $f | tr -d \#`](${f})" >> README.md
+            echo "" >> README.md
+        fi
+    done
+}
+
 
 for OPT in "$@"
 do
@@ -21,6 +36,7 @@ do
             exit 0
             ;;
         commit )
+            genindex
             git add .
             git commit -m "Update on `date "+%Y%m%d_%H%M%S"`"
             git push -u origin master
@@ -28,6 +44,10 @@ do
             ;;
         ls | list )
             listmemo
+            exit 0
+            ;;
+        genindex )
+            genindex
             exit 0
             ;;
     esac
