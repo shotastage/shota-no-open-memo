@@ -4,6 +4,8 @@ SHOTAの公開メモ帳です
 
 # INDEX
 
+- [📝   Redisの活用検討](./MEMO-20200120_221359.md)
+
 - [📝   Gerontlogy NECO](./MEMO-20200116_161550.md)
 
 - [📝   GO JWT 仕様検討](./MEMO-20200116_165128.md)
