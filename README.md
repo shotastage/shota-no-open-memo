@@ -18,6 +18,8 @@ SHOTAの公開メモ帳です
 
 - [📝   DockerHubの2段階認証有効時のセットアップ](./MEMO-20200121_140905.md)
 
+- [📝   OTP認証の実装メモ](./MEMO-20200121_211338.md)
+
 - [📂  NoteScript](./M_NoteScript)
   - [📝   計画機能](./M_NoteScript/MEMO-20200119_165145.md)
 
