@@ -12,6 +12,8 @@ SHOTAの公開メモ帳です
 
 - [📝   CATP Idea](./MEMO-20200116_220955.md)
 
+- [📝   ソースによる情報信頼性DB Idea](./MEMO-20200121_133732.md)
+
 - [📝   OPENメモツールのセットアップ方法](./MEMO-20200119_200300.md)
 
 - [📂  NoteScript](./M_NoteScript)
