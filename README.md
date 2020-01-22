@@ -19,7 +19,7 @@ SHOTAの公開メモ帳です
 - [📝   DockerHubの2段階認証有効時のセットアップ](./MEMO-20200121_140905.md)
 
 - [📂  NoteScript](./M_NoteScript)
-  - [📝   計画機能](./M_NoteScript/MEMO-20200119_165145.md)
+  - [📝   計画機能 ](./M_NoteScript/MEMO-20200119_165145.md)
 
   - [📝   既知の問題](./M_NoteScript/MEMO-20200119_165745.md)
 
