@@ -5,22 +5,49 @@ YOUR_NAME="SHOTA"
 
 mcode() {
     echo "Opening MCODE: ${1}..."
-    # open -a Typora.app 
+
+    D_NAME=0
+    F_NAME=0
+    for f in `find . -maxdepth 1 -type f -name "*.md"` ; do
+        if [ ! ${f} = "./README.md" ]; then
+            F_NAME=$(($F_NAME+1))            
+            if [ "F${F_NAME}" = $1 ]; then
+                open -a Typora.app $f
+            fi
+        fi
+    done
+
+    for d in `find . -maxdepth 1 -type d -name "M_*"` ; do
+        F_NAME=0
+        D_NAME=$(($D_NAME+1))
+        for f in `find $d -maxdepth 1 -type f -name "*.md"` ; do
+            F_NAME=$(($F_NAME+1))
+            if [ "D${D_NAME}F${F_NAME}" = $1 ]; then
+                open -a Typora.app $f
+            fi
+        done
+    done
 }
 
 listmemo() {
+    D_NAME=0
+    F_NAME=0
     for f in `find . -maxdepth 1 -type f -name "*.md"` ; do
         if [ ! ${f} = "./README.md" ]; then
-            echo "・ 📝  `sed -n 1P $f | tr -d \#`"
+            F_NAME=$(($F_NAME+1))
+            echo "・ 📝  [F${F_NAME}] `sed -n 1P $f | tr -d \#`"
             echo ""
         fi
     done
 
     for d in `find . -maxdepth 1 -type d -name "M_*"` ; do
+        F_NAME=0
+        D_NAME=$(($D_NAME+1))
         echo "・ 📂  `basename $d | tr -d "M_"`"
         echo ""
-        for f in `find $d -maxdepth 1 -type f -name "*.md"` ; do 
-            echo "    ・ 📝  `sed -n 1P $f | tr -d \#`"
+        for f in `find $d -maxdepth 1 -type f -name "*.md"` ; do
+            F_NAME=$(($F_NAME+1))
+            echo "    ・ 📝   [D${D_NAME}F${F_NAME}] `sed -n 1P $f | tr -d \#`"
             echo ""
         done
     done
@@ -85,7 +112,7 @@ do
             exit 0
             ;;
         o | open )
-            code ~/.setuptools/storage/somemo/
+            mcode $2
             exit 0
             ;;
         sync )

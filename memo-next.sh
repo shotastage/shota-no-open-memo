@@ -51,6 +51,13 @@ do
             cd $CRT
             exit 0
             ;;
+        open | o )
+            CRT=$(pwd)
+            cd ~/.setuptools/storage/somemo/
+            ./memo.sh o $2
+            cd $CRT
+            exit 0
+            ;;
         --generate-index )
             CRT=$(pwd)
             cd ~/.setuptools/storage/somemo/
