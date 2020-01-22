@@ -85,7 +85,7 @@ do
             exit 0
             ;;
         o | open )
-            mcode $2
+            code ~/.setuptools/storage/somemo/
             exit 0
             ;;
         sync )
