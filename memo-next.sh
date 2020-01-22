@@ -65,5 +65,24 @@ do
             cd $CRT
             exit 0
             ;;
+        v | version )
+            CRT=$(pwd)
+            cd ~/.setuptools/storage/somemo/
+            ./memo.sh v
+            cd $CRT
+            exit 0
+            ;;
+        h | help )
+            CRT=$(pwd)
+            cd ~/.setuptools/storage/somemo/
+            ./memo.sh h
+            cd $CRT
+            exit 0
+            ;;
     esac
 done
+
+CRT=$(pwd)
+cd ~/.setuptools/storage/somemo/
+./memo.sh
+cd $CRT

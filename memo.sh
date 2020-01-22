@@ -124,5 +124,34 @@ do
             genindex
             exit 0
             ;;
+
+        v | version )
+            echo "SS Memo"
+            echo "Copyright (C) 2020 Shota Shimazu All Rights Reserved/"
+            echo
+            echo "Version 1.0.00"
+            echo
+            exit 0
+            ;;
+        h | help )
+            echo
+            echo "SS Memo"
+            echo
+            echo "memo new             Create a new memo"
+            echo "memo mkf             Make new memo folder"
+            echo "memo up              Upload local memo to git server"
+            echo "memo ls              List and show memos"
+            echo "memo open [MOID]     Open specified memo by MOID"
+            echo "memo sync            Sync memos to server"
+            echo "memo version         Check current version"
+            echo "memo help            Show usage"
+            exit 0
+            ;;
+        
     esac
 done
+
+
+echo
+echo "Given argument $1 does not exist!"
+echo "memo help to show usage."
