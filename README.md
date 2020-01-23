@@ -23,8 +23,6 @@ SHOTAの公開メモ帳です
 
   - [📝   既知の問題](./M_NoteScript/MEMO-20200119_165745.md)
 
-  - [📝   memo.sh Next対応](./M_NoteScript/MEMO-20200119_194223.md)
-
 - [📂  NXPortal](./M_NXPortal)
   - [📝   Next RG Portal開発メモ](./M_NXPortal/MEMO-20200116_221637.md)
 
