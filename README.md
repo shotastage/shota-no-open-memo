@@ -6,8 +6,6 @@ SHOTAの公開メモ帳です
 
 - [📝   Redisの活用検討](./MEMO-20200120_221359.md)
 
-- [📝   Gerontlogy NECO](./MEMO-20200116_161550.md)
-
 - [📝   Bhaa Token使用における注意事項](./MEMO-20200122_195317.md)
 
 - [📝   CATP Idea](./MEMO-20200116_220955.md)
