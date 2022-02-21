@@ -10,9 +10,9 @@ mcode() {
     F_NAME=0
     for f in `find . -maxdepth 1 -type f -name "*.md"` ; do
         if [ ! ${f} = "./README.md" ]; then
-            F_NAME=$(($F_NAME+1))            
+            F_NAME=$(($F_NAME+1))
             if [ "F${F_NAME}" = $1 ]; then
-                open -a Typora.app $f
+                open -a /Applications/Markdown\ Editor.app $f
             fi
         fi
     done
@@ -23,7 +23,7 @@ mcode() {
         for f in `find $d -maxdepth 1 -type f -name "*.md"` ; do
             F_NAME=$(($F_NAME+1))
             if [ "D${D_NAME}F${F_NAME}" = $1 ]; then
-                open -a Typora.app $f
+                open -a /Applications/Markdown\ Editor.app $f
             fi
         done
     done
@@ -62,16 +62,16 @@ genindex() {
     echo "# INDEX" >> README.md
     echo "" >> README.md
 
-    for f in `find . -maxdepth 1 -type f -name "*.md"` ; do 
+    for f in `find . -maxdepth 1 -type f -name "*.md"` ; do
         if [ ! ${f} = "./README.md" ]; then
             echo "- [📝  `sed -n 1P $f | tr -d \#`](${f})" >> README.md
             echo "" >> README.md
         fi
     done
 
-    for d in `find . -maxdepth 1 -type d -name "M_*"` ; do 
+    for d in `find . -maxdepth 1 -type d -name "M_*"` ; do
         echo "- [📂  `basename $d | tr -d "M_"`](${d})" >> README.md
-        for f in `find $d -maxdepth 1 -type f -name "*.md"` ; do 
+        for f in `find $d -maxdepth 1 -type f -name "*.md"` ; do
             echo "  - [📝  `sed -n 1P $f | tr -d \#`](${f})" >> README.md
             echo "" >> README.md
         done
@@ -91,7 +91,7 @@ do
             FNAME=MEMO-`date "+%Y%m%d_%H%M%S"`.md
             touch $FNAME
             echo "# Title" >> $FNAME
-            open -a Typora $FNAME
+            open -a /Applications/Markdown\ Editor.app $FNAME
             exit 0
             ;;
         mkf )
@@ -147,7 +147,7 @@ do
             echo "memo help            Show usage"
             exit 0
             ;;
-        
+
     esac
 done
 
